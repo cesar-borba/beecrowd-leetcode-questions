@@ -3,7 +3,7 @@
 //Nome: Lista de Chamada
 //Assunto: Ordenação, Sort
 //Competição/criador: OBI 2010
-//https://judge.beecrowd.com/pt/problems/view/<number>
+//https://judge.beecrowd.com/pt/problems/view/2381
 
 using namespace std;
 
@@ -11,8 +11,10 @@ int main() {
     
     int n, k;
 
-    cin >> n >> k;
-    cin.ignore();
+    //cin >> n >> k;
+    //cin.ignore();
+    
+    cin >> n >> k >> ws;
 
     vector<string> nomes(n);
 
