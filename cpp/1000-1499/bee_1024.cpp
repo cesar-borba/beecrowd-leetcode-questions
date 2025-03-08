@@ -17,16 +17,6 @@ int main() {
         getline(cin, frase);
         teste.push_back(frase);    
     }
-    
-    //cout << endl;
-
-    for (int i=0; i<teste.size(); i++) {
-        //cout << "palavra: " << teste[i] << endl;
-        for(int j=0; j< teste[i].size(); j++) {
-            //teste[i][j] += 3;
-            //cout<< teste [i][j] << endl;
-        }
-    }
 
     for (int i=0; i<teste.size(); i++) {
         for(int j=0; j< teste[i].size(); j++) {
@@ -34,7 +24,6 @@ int main() {
                 teste[i][j] += 3;
             }
         }
-        //cout << teste[i] << endl;
     }
 
     for (int i=0; i< teste.size();i++) {
@@ -43,12 +32,9 @@ int main() {
             contr+=teste[i][j];
         }
         teste[i]=contr;
-        //cout << teste[i] << endl;
     }
 
     for(int i=0; i<teste.size();i++) {
-        //cout << ceil((double)teste[i].size()/2) << endl;
-        //int metade = ceil((double)teste[i].size()/2);
         int metade = teste[i].size()/2;
         for(int j=metade; j<teste[i].size();j++) {
             teste[i][j]-=1;
